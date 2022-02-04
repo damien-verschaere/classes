@@ -55,10 +55,10 @@
     // si fetch ok 
         if (!empty($user)) {
         if ($password==$user['password']) {
-            $this->id = $user['id']; 
-            $this->login = $user['login'];
-            $this->password = $user['password'];
-
+            $this->_id = $user['id']; 
+            $this->_login = $user['login'];
+            $this->_password = $user['password'];
+            
             }
             else {
                 echo "mauvais login ou mdp ";

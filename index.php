@@ -1,9 +1,9 @@
 <?php 
         session_start();
-        require_once "user.php";
+        require_once "userpdo.php";
         
         if (isset($_POST["sub"])){
-            $user = new User($login,$password,$email,$firstname,$lastname);
+            $user = new User();
             $user->register($_POST['login'],$_POST['password'],$_POST['email'],  $_POST['firstname'],$_POST['lastname']); 
              
         }
